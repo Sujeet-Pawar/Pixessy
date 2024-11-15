@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Pixessy</title>
+    <style>
+        /* Dark Theme Styles */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1b1b1b;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #ff6347;
+            margin: 0;
+        }
+        .cart-container {
+            padding: 20px;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            background-color: #1b1b1b;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        .item-info {
+            display: flex;
+            align-items: center;
+        }
+        .item-image {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+        .item-details {
+            flex: 1;
+        }
+        .item-price {
+            font-size: 1.2em;
+            color: #ff6347;
+        }
+        .summary {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #1b1b1b;
+            border-radius: 10px;
+        }
+        .summary h2 {
+            margin: 0 0 15px 0;
+            color: #ff6347;
+        }
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        .proceed-button {
+            padding: 15px;
+            font-size: 1.2em;
+            color: #ffffff;
+            background-color: #ff6347;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        .proceed-button:hover {
+            background-color: #e5533d;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Cart</h1>
+</header>
+<header style="background-color: #1b1b1b; color: #ffffff; padding: 15px 20px;">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+
+      <!-- Logo -->
+      <div id="logo" style="font-size: 1.5em; font-weight: bold;">
+        <a href="index.html" style="color: #ffffff; text-decoration: none;">Pixessy</a>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav style="flex: 1; display: flex; justify-content: center; gap: 20px;">
+        <a href="index.html" style="color: #ffffff; text-decoration: none;">HOME🏠</a>
+        <a href="SHOP.html" style="color: #ffffff; text-decoration: none;">SHOP🛍️</a>
+        <a href="CATEGORIES.html" style="color: #ffffff; text-decoration: none;">CATEGORIES📚</a>
+        <a href="DEALS.html" style="color: #ffffff; text-decoration: none;">DEALS🏷️</a>
+        <a href="CONTACTUS.html" style="color: #ffffff; text-decoration: none;">CONTACT US📞</a>
+      </nav>
+
+      <!-- Search Bar -->
+      <div style="position: relative; width: 200px;">
+        <input type="text" placeholder="Search..." style="width: 90%; padding: 8px; border: 1px solid #333; border-radius: 5px; background-color: #333; color: #ffffff;">
+      </div>
+      <!-- Account and Cart Icons -->
+      <div style="display: flex; gap: 15px;">
+        <!-- Account Icon -->
+        <a href="PROFILE.html" style="color: #ffffff; text-decoration: none;">
+          <span style="font-size: 1.2em;" href="PROFILE.html">👤</span>
+        </a>
+        <!-- Cart Icon -->
+        <a href="CART.html" style="color: #ffffff; text-decoration: none;">
+          <span style="font-size: 1.2em;" href="CART.html">🛒</span>
+        </a>
+      </div>
+    </div>
+  </header>
+<div class="cart-container">
+    <div class="cart-item">
+        <div class="item-info">
+            <img src="https://www.jiomart.com/images/product/original/rvysd1uxm5/wqaao-trendy-stylish-lace-up-sneakers-for-men-black-product-images-rvysd1uxm5-0-202403050621.jpg?im=Resize=(500,630)" alt="Product 1" class="item-image">
+            <div class="item-details">
+                <h2>Stylish Sneakers</h2>
+                <p>Quantity: 1</p>
+            </div>
+        </div>
+        <div class="item-price"> $49.99</div>
+    </div>
+
+    <div class="cart-item">
+        <div class="item-info">
+            <img src="https://www.jiomart.com/images/product/original/rvvls8gkcx/punnkfunnk-unique-digital-smart-watch-d18-smart-watches-full-hd-bluetooth-calling-watch-product-images-orvvls8gkcx-p593561438-0-202312221915.jpg?im=Resize=(1000,1000)" alt="Product 2" class="item-image">
+            <div class="item-details">
+                <h2>Smartwatch</h2>
+                <p>Quantity: 2</p>
+            </div>
+        </div>
+        <div class="item-price">₹199.99</div>
+    </div>
+
+    <div class="cart-item">
+        <div class="item-info">
+            <img src="https://www.igearworld.com/cdn/shop/files/grape1.png?v=1711617759&width=533" alt="Product 3" class="item-image">
+            <div class="item-details">
+                <h2>Bluetooth Headphones</h2>
+                <p>Quantity: 1</p>
+            </div>
+        </div>
+        <div class="item-price">₹89.99</div>
+    </div>
+
+    <div class="summary">
+        <h2>Order Summary</h2>
+        <div class="summary-item">
+            <span>Subtotal</span>
+            <span>₹339.97</span>
+        </div>
+        <div class="summary-item">
+            <span>Shipping</span>
+            <span>₹5.00</span>
+        </div>
+        <div class="summary-item">
+            <span><strong>Total</strong></span>
+            <span><strong>₹344.97</strong></span>
+        </div>
+        <button class="proceed-button" onclick="document.location='PAYMENT.html'" onclick="document.location='PAYMENT.html'">Proceed to Payment</button>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+</footer>
+</body>
+</html>

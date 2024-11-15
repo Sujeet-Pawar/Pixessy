@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Categories - Pixessy</title>
+    <style>
+        /* Dark Theme Styles */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1b1b1b;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #ff6347;
+            margin: 0;
+        }
+        .filter-container {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+        .filter-icon {
+            background-color: #ff6347;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .filter-icon:hover {
+            background-color: #e5533d;
+        }
+        .category-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .category-item {
+            background-color: #1b1b1b;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .category-item:hover {
+            transform: scale(1.05);
+        }
+        .category-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .category-name {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Product Categories</h1>
+</header>
+ <!-- Header Section -->
+ <header style="background-color: #1b1b1b; color: #ffffff; padding: 15px 20px;">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+
+      <!-- Logo -->
+      <div id="logo" style="font-size: 1.5em; font-weight: bold;">
+        <a href="index.html" style="color: #ffffff; text-decoration: none;">Pixessy</a>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav style="flex: 1; display: flex; justify-content: center; gap: 20px;">
+        <a href="index.html" style="color: #ffffff; text-decoration: none;">HOME🏠</a>
+        <a href="SHOP.html" style="color: #ffffff; text-decoration: none;">SHOP🛍️</a>
+        <a href="CATEGORIES.html" style="color: #ffffff; text-decoration: none;">CATEGORIES📚</a>
+        <a href="DEALS.html" style="color: #ffffff; text-decoration: none;">DEALS🏷️</a>
+        <a href="CONTACTUS.html" style="color: #ffffff; text-decoration: none;">CONTACT US📞</a>
+      </nav>
+      <!-- Search Bar -->
+      <div style="position: relative; width: 200px;">
+        <input type="text" placeholder="Search..." style="width: 90%; padding: 8px; border: 1px solid #333; border-radius: 5px; background-color: #333; color: #ffffff;">
+      </div>
+      <!-- Account and Cart Icons -->
+      <div style="display: flex; gap: 15px;">
+        <!-- Account Icon -->
+        <a href="PROFILE.html" style="color: #ffffff; text-decoration: none;">
+          <span style="font-size: 1.2em;">👤</span>
+        </a>
+        <!-- Cart Icon -->
+        <a href="CART.html" style="color: #ffffff; text-decoration: none;">
+          <span style="font-size: 1.2em;">🛒</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+<div class="filter-container">
+    <button class="filter-icon" onclick="toggleFilter()">Filter Products</button>
+</div>
+<section class="category-list">
+    <div class="category-item">
+        <img src="https://cdn3.vectorstock.com/i/1000x1000/14/97/creative-fashion-logo-design-vector-26531497.jpg" alt="Fashion" class="category-image">
+        <div class="category-name">Fashion</div>
+    </div>
+    <div class="category-item">
+        <img src="https://t3.ftcdn.net/jpg/03/20/72/66/360_F_320726662_XVxhHxXYGwXnBMkHRnEeHJ4hA6gH0DqN.jpg" alt="Electronics" class="category-image">
+        <div class="category-name">Electronics</div>
+    </div>
+    <div class="category-item">
+        <img src="https://png.pngtree.com/element_our/png/20180912/creative-home-design-logo-with-abstract-line-png_94258.jpg" alt="Home Decor" class="category-image">
+        <div class="category-name">Home Decor</div>
+    </div>
+    <div class="category-item">
+        <img src="https://static.vecteezy.com/system/resources/previews/022/242/738/non_2x/smart-learning-education-book-shop-store-logo-design-template-free-vector.jpg" alt="Books" class="category-image">
+        <div class="category-name">Books</div>
+    </div>
+    <div class="category-item">
+        <img src="https://static.vecteezy.com/system/resources/previews/021/769/115/non_2x/toys-logo-free-vector.jpg" alt="Toys" class="category-image">
+        <div class="category-name">Toys</div>
+    </div>
+    <div class="category-item">
+        <img src="https://img.freepik.com/premium-vector/sports-team-logo-with-handshake_339976-60098.jpg?semt=ais_hybrid" alt="Sports" class="category-image">
+        <div class="category-name">Sports</div>
+    </div>
+    <div class="category-item">
+        <img src="https://www.shutterstock.com/image-vector/beautiful-woman-face-logo-hair-600nw-2436321179.jpg" alt="Beauty" class="category-image">
+        <div class="category-name">Beauty</div>
+    </div>
+    <div class="category-item">
+        <img src="https://i.pinimg.com/736x/30/7e/69/307e6906c251d91bb6202b3dd4736d7a.jpg" alt="Health" class="category-image">
+        <div class="category-name">Health</div>
+    </div>
+    <div class="category-item">
+        <img src="https://static.vecteezy.com/system/resources/previews/021/854/379/non_2x/gear-wings-piston-emblem-logo-automotive-piston-workshop-logo-design-modern-badge-style-custom-car-service-engine-tune-up-icon-symbol-illustration-vector.jpg" alt="Automotive" class="category-image">
+        <div class="category-name">Automotive</div>
+    </div>
+    <div class="category-item">
+        <img src="https://media.istockphoto.com/id/1205419959/vector/vegetables-on-shopping-cart-trolley-grocery-logo-icon-design-vector.jpg?s=612x612&w=0&k=20&c=HgCTmq-4R0-MvKIGrSFJcifqqoJIcducRZBVTO4V5TU=" alt="Grocery" class="category-image">
+        <div class="category-name">Grocery</div>
+    </div>
+</section>
+<script>
+    function toggleFilter() {
+        alert("Filter options will be implemented here.");
+    }
+</script>
+<footer>
+    <p>&copy; 2024 Pixessy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

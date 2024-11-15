@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixessy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header style="background-color: #1b1b1b; color: #ffffff; padding: 15px 20px;">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+
+      <!-- Logo -->
+      <div id="logo" style="font-size: 1.5em; font-weight: bold;">
+        <a href="index.html" style="color: #ffffff; text-decoration: none;">Pixessy</a>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav style="flex: 1; display: flex; justify-content: center; gap: 20px;" >
+        <a href="index.html" style="color: #ffffff; text-decoration: none;" >HOME🏠</a>
+        <a href="SHOP.html" style="color: #ffffff; text-decoration: none;">SHOP🛍️</a>
+        <a href="CATEGORIES.html" style="color: #ffffff; text-decoration: none;">CATEGORIES📚</a>
+        <a href="DEALS.html" style="color: #ffffff; text-decoration: none;">DEALS🏷️</a>
+        <a href="CONTACTUS.html" style="color: #ffffff; text-decoration: none;">CONTACT US📞</a>
+      </nav>
+
+      <!-- Search Bar -->
+      <div style="position: relative; width: 200px;">
+        <input type="text" placeholder="Search..." style="width: 90%; padding: 8px; border: 1px solid #333; border-radius: 5px; background-color: #333; color: #ffffff;">
+      </div>
+      <!-- Account and Cart Icons -->
+      <div style="display: flex; gap: 15px;">
+        <!-- Account Icon -->
+        <a href="PROFILE.html" style="color: #ffffff; text-decoration: none;">
+          <span style="font-size: 1.2em;" href="PROFILE.html">👤</span>
+        </a>
+        <!-- Cart Icon -->
+        <a href="CART.html" style="color: #ffffff; text-decoration: none;">
+          <span style="font-size: 1.2em;" href="CART.html">🛒</span>
+        </a>
+      </div>
+    </div>
+  </header>
+<section>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixessy Hero Section</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles for Hero Section */
+        .hero-section {
+            position: relative;
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff6347;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .cta-btn {
+            padding: 12px 30px;
+            background-color: #ff6347;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+        
+        .cta-btn:hover {
+            background-color: #e5553c;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+<!-- Hero Section with Carousel -->
+<section class="hero-section">
+    <div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <!-- Overlay for Darkening Background Images -->
+        <div class="overlay"></div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="https://epiprodux.com/blog/wp-content/uploads/2023/03/mr_epiprodux_fashion_products_and_brands_under_management_9e6d2468-55a8-4f48-86cb-9b1b2841fac1.png" alt="Fashion Collection" width="1920" height="1080">
+                <div class="hero-content">
+                    <h1 class="hero-title">Discover Our New Fashion Collection</h1>
+                    <p class="hero-subtitle">Elevate your style with the latest trends at unbeatable prices</p>
+                    <a href="FASHATION.html" class="cta-btn">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/premium-photo/photo-electronics-devices-tech-gadgets-concept_798686-101.jpg" alt="Electronics" width="1920" height="1080">
+                <div class="hero-content">
+                    <h1 class="hero-title">Top Deals on Electronics</h1>
+                    <p class="hero-subtitle">Upgrade your tech with exclusive offers on top brands</p>
+                    <a href="ELECTRONICS.html" class="cta-btn">Explore Products</a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="https://img.staticmb.com/mbcontent/images/crop/uploads/2024/4/Embrace-Boho-Vibes-for-Your-Living-Room-Decor_0_1200.jpg" alt="Home Decor" width="1920" height="1080">
+                <div class="hero-content">
+                    <h1 class="hero-title">Revamp Your Space with Stylish Home Decor</h1>
+                    <p class="hero-subtitle">Find the perfect pieces to transform your home today</p>
+                    <a href="HOMEDECOR.html" class="cta-btn">Browse Decor</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+</section>
+ <style>
+    /* Dark Theme and Carousel Styles */
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .carousel-container {
+      position: relative;
+      max-width: 1200px;
+      margin: auto;
+      overflow: hidden;
+    }
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease;
+      width: calc(100% * 15);
+    }
+    .carousel-item {
+      min-width: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+      background-color: #1b1b1b;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .carousel-item img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .carousel-item h3 {
+      color: #ff6347;
+      margin: 10px 0;
+    }
+    .carousel-item a {
+      text-decoration: none;
+      color: #ffffff;
+      padding: 10px 20px;
+      background-color: #ff6347;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <style>
+    /* Dark Theme Styles */
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .deals-container {
+      display: flex;
+      overflow-x: auto;
+      padding: 20px 0;
+    }
+    .deal-item {
+      background-color: #1b1b1b;
+      border-radius: 8px;
+      margin-right: 20px;
+      padding: 15px;
+      min-width: 200px;
+      text-align: center;
+      position: relative;
+    }
+    .deal-item img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .discount-tag {
+      background-color: #ff6347;
+      color: #ffffff;
+      padding: 5px 10px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .countdown {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      color: #ff6347;
+    }
+    .buy-now {
+      text-decoration: none;
+      color: #ffffff;
+      padding: 10px 15px;
+      background-color: #ff6347;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Today's Deals Section -->
+  <section>
+    <h2 style="margin-bottom: 20px; font-size: 2em; color: #ffffff;">Today's Deals</h2>
+
+    <!-- Countdown Timer -->
+    <div class="countdown" id="countdown">
+      Deal ends in: <span id="timer">00:30:00</span>
+    </div>
+
+    <div class="deals-container" id="deals">
+      <!-- Sample Deal Items -->
+      <div class="deal-item">
+        <span class="discount-tag">20% Off</span>
+        <img src="https://www.jiomart.com/images/product/original/rvysd1uxm5/wqaao-trendy-stylish-lace-up-sneakers-for-men-black-product-images-rvysd1uxm5-0-202403050621.jpg?im=Resize=(500,630)" alt="Deal Item 1">
+        <h3>Stylish Sneakers</h3>
+        <p>Now only ₹49.99</p>
+        <a href="CART.html" class="buy-now">Buy Now</a>
+      </div>
+      <div class="deal-item">
+        <span class="discount-tag">30% Off</span>
+        <img src="https://www.jiomart.com/images/product/original/rvvls8gkcx/punnkfunnk-unique-digital-smart-watch-d18-smart-watches-full-hd-bluetooth-calling-watch-product-images-orvvls8gkcx-p593561438-0-202312221915.jpg?im=Resize=(1000,1000)" alt="Deal Item 2">
+        <h3>Smartwatch</h3>
+        <p>Now only ₹199.99</p>
+        <a href="CART.html" class="buy-now">Buy Now</a>
+      </div>
+      <div class="deal-item">
+        <span class="discount-tag">10% Off</span>
+        <img src="https://www.igearworld.com/cdn/shop/files/grape1.png?v=1711617759&width=533" alt="Deal Item 3">
+        <h3>Bluetooth Headphones</h3>
+        <p>Now only ₹89.99</p>
+        <a href="CART.html" class="buy-now">Buy Now</a>
+      </div>
+      <!-- Add more deal items as needed -->
+    </div>
+  </section>
+  <script>
+    // Countdown Timer Script
+    const countdownElement = document.getElementById('timer');
+    let timeLeft = 1800; // 30 minutes in seconds
+
+    const countdown = setInterval(() => {
+      const minutes = Math.floor(timeLeft / 60);
+      const seconds = timeLeft % 60;
+
+      countdownElement.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      timeLeft--;
+
+      if (timeLeft < 0) {
+        clearInterval(countdown);
+        countdownElement.textContent = "Deal Expired!";
+      }
+    }, 1000);
+  </script>
+<section style="background-color: #1b1b1b; padding: 40px 0; color: #ffffff; text-align: center; font-family: Arial, sans-serif;">
+  <h2 style="color: #ff6347; margin-bottom: 20px;">Featured Categories</h2>
+  <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+
+      <!-- Fashion Category -->
+      <div style="background-color: #2c2c2c; padding: 20px; border-radius: 8px;">
+          <img src="https://cdn3.vectorstock.com/i/1000x1000/14/97/creative-fashion-logo-design-vector-26531497.jpg" alt="Fashion" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+          <h3 style="color: #ff6347; margin: 15px 0 10px;">Fashion</h3>
+          <p>Discover the latest trends in clothing and accessories.</p>
+          <a href="FASHATION.html" style="display: inline-block; color: #ffffff; background-color: #ff6347; padding: 10px 15px; border-radius: 4px; text-decoration: none; margin-top: 10px;">Browse Fashion</a>
+      </div>
+
+      <!-- Electronics Category -->
+      <div style="background-color: #2c2c2c; padding: 20px; border-radius: 8px;">
+          <img src="https://t3.ftcdn.net/jpg/03/20/72/66/360_F_320726662_XVxhHxXYGwXnBMkHRnEeHJ4hA6gH0DqN.jpg" alt="Electronics" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+          <h3 style="color: #ff6347; margin: 15px 0 10px;">Electronics</h3>
+          <p>Explore the latest gadgets, from smartphones to laptops.</p>
+          <a href="ELECTRONICS.html" style="display: inline-block; color: #ffffff; background-color: #ff6347; padding: 10px 15px; border-radius: 4px; text-decoration: none; margin-top: 10px;">Explore Electronics</a>
+      </div>
+
+      <!-- Home Decor Category -->
+      <div style="background-color: #2c2c2c; padding: 20px; border-radius: 8px;">
+          <img src="https://png.pngtree.com/element_our/png/20180912/creative-home-design-logo-with-abstract-line-png_94258.jpg" alt="Home Decor" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+          <h3 style="color: #ff6347; margin: 15px 0 10px;">Home Decor</h3>
+          <p>Find beautiful pieces to transform your living space.</p>
+          <a href="HOMEDECOR.html" style="display: inline-block; color: #ffffff; background-color: #ff6347; padding: 10px 15px; border-radius: 4px; text-decoration: none; margin-top: 10px;">Shop Home Decor</a>
+      </div>
+
+      <!-- Books Category -->
+      <div style="background-color: #2c2c2c; padding: 20px; border-radius: 8px;">
+          <img src="https://static.vecteezy.com/system/resources/previews/022/242/738/non_2x/smart-learning-education-book-shop-store-logo-design-template-free-vector.jpg" alt="Books" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+          <h3 style="color: #ff6347; margin: 15px 0 10px;">Books</h3>
+          <p>Dive into a world of stories and knowledge with our selection.</p>
+          <a href="BOOK.html" style="display: inline-block; color: #ffffff; background-color: #ff6347; padding: 10px 15px; border-radius: 4px; text-decoration: none; margin-top: 10px;">Browse Books</a>
+      </div>
+
+      <!-- Sports & Outdoors Category -->
+      <div style="background-color: #2c2c2c; padding: 20px; border-radius: 8px;">
+          <img src="https://img.freepik.com/premium-vector/sports-team-logo-with-handshake_339976-60098.jpg?semt=ais_hybrid" alt="Sports & Outdoors" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+          <h3 style="color: #ff6347; margin: 15px 0 10px;">Sports & Outdoors</h3>
+          <p>Gear up for your adventures with our outdoor collection.</p>
+          <a href="SPORTS.html" style="display: inline-block; color: #ffffff; background-color: #ff6347; padding: 10px 15px; border-radius: 4px; text-decoration: none; margin-top: 10px;">Shop Sports & Outdoors</a>
+      </div>
+
+  </div>
+</section>
+ <style>
+    /* Dark Theme Styles */
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .benefits-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .benefit-item {
+      background-color: #1b1b1b;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+    .benefit-item img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+    .benefit-item h3 {
+      color: #ff6347;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Why Choose Us Section -->
+  <section>
+    <h2 style="margin-bottom: 20px; font-size: 2em; color: #ffffff;">Why Choose Us?</h2>
+
+    <div class="benefits-container">
+      <!-- Benefit Item 1 -->
+      <div class="benefit-item">
+        <img src="https://www.shutterstock.com/shutterstock/photos/1891081777/display_1500/stock-vector--guaranteed-premium-product-stamps-of-best-quality-logo-design-vector-1891081777.jpg" alt="Quality Guaranteed">
+        <h3>Quality Guaranteed</h3>
+        <p>We ensure top-notch quality in all our products.</p>
+      </div>
+      <!-- Benefit Item 2 -->
+      <div class="benefit-item">
+        <img src="https://www.shutterstock.com/image-vector/fast-moving-shipping-delivery-truck-260nw-1202562907.jpg" alt="Fast Shipping">
+        <h3>Fast Shipping</h3>
+        <p>Get your orders delivered quickly and efficiently.</p>
+      </div>
+      <!-- Benefit Item 3 -->
+      <div class="benefit-item">
+        <img src="https://t3.ftcdn.net/jpg/05/10/88/82/360_F_510888200_EentlrpDCeyf2L5FZEeSfgYaeiZ80qAU.jpg" alt="24/7 Support">
+        <h3>24/7 Support</h3>
+        <p>Our customer service is here to assist you anytime.</p>
+      </div>
+      <!-- Benefit Item 4 -->
+      <div class="benefit-item">
+        <img src="https://t3.ftcdn.net/jpg/05/23/07/08/360_F_523070824_1nqNXygcCQbCUe3yiEGqG6Dm41VyDGAp.jpg" alt="Easy Returns">
+        <h3>Easy Returns</h3>
+        <p>Hassle-free returns for your peace of mind.</p>
+      </div>
+      <!-- Benefit Item 5 -->
+      <div class="benefit-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6bXfW7lfXiCzOD10zVoyscSIHzLC92AIMJQ&s" alt="Secure Payments">
+        <h3>Secure Payments</h3>
+        <p>Your transactions are safe and secure with us.</p>
+      </div>
+      <!-- Benefit Item 6 -->
+      <div class="benefit-item">
+        <img src="https://media.istockphoto.com/id/959504250/vector/multi-channel-icon.jpg?s=612x612&w=0&k=20&c=3vAH3eYESqOJCY7fqfVLXV9YEmUZKfsayUIfmEjBdgM=" alt="Wide Variety">
+        <h3>Wide Variety</h3>
+        <p>Explore a diverse range of products for everyone.</p>
+      </div>
+      <!-- Benefit Item 7 -->
+      <div class="benefit-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOq9jCIZLTV9PhvgX_Y-oj6MUjba9Vm37q2g&s" alt="Exclusive Offers">
+        <h3>Exclusive Offers</h3>
+        <p>Enjoy special discounts and promotions regularly.</p>
+      </div>
+      <!-- Benefit Item 8 -->
+      <div class="benefit-item">
+        <img src="https://www.shutterstock.com/image-vector/community-support-symbol-logo-vector-600nw-2500934643.jpg" alt="Community Driven">
+        <h3>Community Driven</h3>
+        <p>We value our customers' feedback and community.</p>
+      </div>
+      <!-- Benefit Item 9 -->
+      <div class="benefit-item">
+        <img src="https://thumbs.dreamstime.com/z/lightbulb-icon-light-bulb-cog-symbol-flat-style-innovation-gears-mechanism-line-sign-simple-process-idea-156935997.jpg" alt="Innovative Solutions">
+        <h3>Innovative Solutions</h3>
+        <p>Constantly improving to meet your needs.</p>
+      </div>
+      <!-- Benefit Item 10 -->
+      <div class="benefit-item">
+        <img src="https://media.istockphoto.com/id/1204054456/vector/customer-review-icon-quality-rating-feedback-five-stars-line-symbol-on-white-background.jpg?s=612x612&w=0&k=20&c=lXbCzZfQP3m9Lp79QTZFYGXuPZmCfIou8FW4rBZOzhM=" alt="Customer Satisfaction">
+        <h3>Customer Satisfaction</h3>
+        <p>Your happiness is our priority.</p>
+      </div>
+    </div>
+  </section>
+ <style>
+    /* Dark Theme Styles */
+    body {
+      background-color: #000000;
+      color: #000000;
+      font-family: Arial, sans-serif;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .new-arrivals-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .product-item {
+      background-color: #1b1b1b;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+    }
+    .product-item img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .product-item h3 {
+      margin: 10px 0;
+      color: #ff6347;
+    }
+    .product-item p {
+      font-size: 1.2em;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    .see-all {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #ffffff;
+      padding: 10px 15px;
+      background-color: #ff6347;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- New Arrivals Section -->
+  <section>
+    <h2 style="margin-bottom: 20px; font-size: 2em; color: #ffffff;">New Arrivals</h2>
+
+    <div class="new-arrivals-container">
+      <!-- Sample Product Items -->
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/81epBowa4UL._SX679_.jpg" alt="New Product 1">
+        <h3><a href="https://amzn.in/d/c1AzjHY" style="color: #ffffff; text-decoration: none;">Lenovo IdeaPad Slim 3 13th Gen Intel Core i7-13620H 15"</a></h3>
+        <p>₹59,990</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/71jG+e7roXL._SX679_.jpg" alt="New Product 2">
+        <h3><a href="https://amzn.in/d/5WDKBGK" style="color: #ffffff; text-decoration: none;">Apple MacBook Air Laptop: Apple M1 chip</a></h3>
+        <p>₹56,990</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61nTNphSBvL._SX679_.jpg" alt="New Product 3">
+        <h3><a href="https://amzn.in/d/dffwi5C" style="color: #ffffff; text-decoration: none;">ASUS TUF Gaming A15, Ryzen 7 7435HS</a></h3>
+        <p>₹60,990</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61hHp8WaBVL._SX679_.jpg" alt="New Product 4">
+        <h3><a href="https://amzn.in/d/1stfgwL" style="color: #ffffff; text-decoration: none;">Fire-Boltt Phoenix Pro 35.3mm (1.39 inch)</a></h3>
+        <p> ₹1,199</p>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/51PVC63RhjS._SX679_.jpg" alt="New Product 5">
+        <h3><a href="https://amzn.in/d/eQObLxT" style="color: #ffffff; text-decoration: none;">JBL Bar 9.1, Truly Wireless Soundbar with 9.1 (5.1.4) Channel</a></h3>
+        <p>₹69,999</p>
+      </div>
+      <!-- Add more new product items as needed -->
+    </div>
+    <a href="DEALS.html" class="see-all">See All New Arrivals</a>
+  </section>
+  <section>
+    <h2 style="margin-bottom: 20px; font-size: 2em;">Check Out Our Latest Products!</h2>
+    <div class="new-arrivals-container">
+        <!-- Sample Product Items -->
+        <div class="product-item">
+            <img src="https://m.media-amazon.com/images/I/41q3TCgjvML._SX300_SY300_QL70_FMwebp_.jpg" alt="New Product 1">
+            <h3><a href="https://amzn.in/d/g577OZV" style="color: #ffffff; text-decoration: none;">Storio Rechargeable Toys Talking Cactus Baby Toys for Kids Dancing Cactus Toys</a></h3>
+            <p>₹275</p>
+        </div>
+        <div class="product-item">
+            <img src="https://m.media-amazon.com/images/I/61Tv5I7lj0L._SX679_.jpg" alt="New Product 2">
+            <h3><a href="https://amzn.in/d/4o9MthJ" style="color: #ffffff; text-decoration: none;">Desidiya Warm White Diya/Diwali Light Curtain, Led String Copper Lights with Pack of 12 Hanging Diyas</a></h3>
+            <p>₹399</p>
+        </div>
+        <div class="product-item">
+            <img src="https://m.media-amazon.com/images/I/51lMGj6RiqL._SY445_SX342_QL70_FMwebp_.jpg" alt="New Product 3">
+            <h3><a href="https://amzn.in/d/1M9bteB" style="color: #ffffff; text-decoration: none;">Plastic Led Bonsai Table Lamp,DIY Artificial Tree Lamp with 36 Pearls</a></h3>
+            <p>₹679</p>
+        </div>
+        <div class="product-item">
+            <img src="https://m.media-amazon.com/images/I/51FMxSlYmVL._SX300_SY300_QL70_FMwebp_.jpg" alt="New Product 4">
+            <h3><a href="https://amzn.in/d/gYeIOd5" style="color: #ffffff; text-decoration: none;">Status Contract Anti Slip Front Door Mat|(38x58cm)</a></h3>
+            <p>₹79</p>
+        </div>
+        <div class="product-item">
+            <img src="https://m.media-amazon.com/images/I/419H9ez3VWL._SY445_SX342_QL70_FMwebp_.jpg" alt="New Product 5">
+            <h3><a href="https://amzn.in/d/6sKszUh" style="color: #ffffff; text-decoration: none;">HFEHSKJ 3D Galaxy Crystal Ball Night Light, LED Solar System Crystal Ball Night Light</a></h3>
+            <p>₹299</p>
+        </div>
+    </div>
+    <a href="DEALS.html" class="see-all">Explore</a>
+</section>
+ <style>
+        /* Dark Theme Styles */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .testimonial-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .testimonial-item {
+            background-color: #1b1b1b;
+            border-radius: 8px;
+            padding: 20px;
+            min-width: 300px;
+            scroll-snap-align: start;
+        }
+        .testimonial-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .testimonial-item h3 {
+            margin: 10px 0;
+            color: #ff6347;
+        }
+        .rating {
+            color: #ff6347;
+            margin-bottom: 10px;
+        }
+        .testimonial-item p {
+            font-size: 1em;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<!-- Customer Testimonials Section -->
+<section>
+    <h2 style="margin-bottom: 20px; font-size: 2em;">What Our Customers Say</h2>
+
+    <div class="testimonial-container">
+        <div class="testimonial-item">
+            <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Customer 1">
+            <h3>Jane Doe</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>"Amazing products! Fast shipping and great quality. Highly recommend!"</p>
+        </div>
+        <div class="testimonial-item">
+            <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Customer 2">
+            <h3>John Smith</h3>
+            <div class="rating">⭐⭐⭐⭐</div>
+            <p>"I love shopping at Pixessy. The customer service is top-notch!"</p>
+        </div>
+        <div class="testimonial-item">
+            <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Customer 3">
+            <h3>Alice Johnson</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>"Great variety of products at amazing prices. I always find what I need."</p>
+        </div>
+        <div class="testimonial-item">
+            <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Customer 4">
+            <h3>Bob Brown</h3>
+            <div class="rating">⭐⭐⭐⭐</div>
+            <p>"The quality exceeded my expectations. Will definitely shop here again!"</p>
+        </div>
+        <div class="testimonial-item">
+            <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Customer 5">
+            <h3>Mary Green</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>"Fantastic experience! Delivery was quick and items were well-packaged."</p>
+        </div>
+        <div class="testimonial-item">
+            <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Customer 6">
+            <h3>Tom White</h3>
+            <div class="rating">⭐⭐⭐⭐</div>
+            <p>"I appreciate the quality and selection of products. Keep it up!"</p>
+        </div>
+    </div>
+</section>
+<style>
+        /* Dark Theme Styles */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            background-color: #1b1b1b;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 10px;
+            font-size: 2em;
+            color: #ff6347;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        .signup-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .email-input {
+            padding: 10px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            width: 300px;
+            margin-right: 10px;
+        }
+        .signup-button {
+            padding: 10px 15px;
+            font-size: 1em;
+            color: #ffffff;
+            background-color: #ff6347;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .signup-button:hover {
+            background-color: #e5533d;
+        }
+    </style>
+</head>
+<body>
+<!-- Call-to-Action Banner Section -->
+<section>
+    <h2>Stay Updated with Exclusive Deals!</h2>
+    <p>Subscribe to our newsletter and get 10% off on your first purchase when you subscribe.</p>
+
+    <div class="signup-form">
+        <input type="email" class="email-input" placeholder="Enter your email address" required>
+        <button class="signup-button">Subscribe</button>
+    </div>
+</section>
+<style>
+        /* Dark Theme Styles */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            background-color: #1b1b1b;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #ff6347;
+        }
+        p {
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+        .app-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .app-link img {
+            width: 150px;
+            transition: transform 0.2s;
+        }
+        .app-link img:hover {
+            transform: scale(1.05);
+        }
+        .app-mockup {
+            width: 300px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Download Our App Section -->
+<section>
+    <h2>Download Our App</h2>
+    <p>Shop on the go with Pixessy’s app. Fast, easy, and secure!</p>
+
+    <div class="app-links">
+        <a href="https://www.apple.com/app-store/">
+            <img src="https://i.pinimg.com/originals/af/f9/36/aff9364d25fd1844c8ff3e77332a1ce0.png" alt="Download on the App Store" class="app-link" width="100" height="100">
+        </a>
+        <a href="https://play.google.com/store">
+            <img src="https://i.pinimg.com/736x/42/4c/18/424c182a3cc8e02a02580fb166855758.jpg" alt="Get it on Google Play" class="app-link" width="100" height="100">
+        </a>
+    </div>
+
+    <img src="PIXESSY.png" alt="Pixessy App Mockup" class="app-mockup">
+</section>
+<style>
+        /* Dark Theme Styles */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        footer {
+            background-color: #1b1b1b;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        h3 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #ff6347;
+        }
+        .quick-links,
+        .social-media {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .quick-links li,
+        .social-media li {
+            margin: 10px 0;
+        }
+        .social-media a {
+            margin: 0 10px;
+        }
+        .contact-info {
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+        .signup-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .email-input {
+            padding: 10px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            width: 250px;
+            margin-right: 10px;
+        }
+        .signup-button {
+            padding: 10px 15px;
+            font-size: 1em;
+            color: #ffffff;
+            background-color: #ff6347;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .signup-button:hover {
+            background-color: #e5533d;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Footer Section -->
+<footer>
+    <h3>Quick Links</h3>
+    <ul class="quick-links">
+        <li><a href="SHOP.html" style="color: #ffffff;">Shop</a></li>
+        <li><a href="ABOUTUS.html" style="color: #ffffff;">About Us</a></li>
+        <li><a href="CONTACTUS.html" style="color: #ffffff;">Customer Support</a></li>
+        <li><a href="PRIVACY.html" style="color: #ffffff;">Privacy Policy</a></li>
+        <li><a href="TERMS.html" style="color: #ffffff;">Terms of Service</a></li>
+    </ul>
+<section>
+  <style>
+    /* Centering container */
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* Full viewport height for vertical centering */
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+    }
+
+    .up, .down {
+      display: flex;
+      gap: 0.5em;
+    }
+
+    .card1, .card2, .card3, .card4 {
+      width: 90px;
+      height: 90px;
+      outline: none;
+      border: none;
+      background: white;
+      border-radius: 5px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: 0.2s ease-in-out;
+    }
+
+    .instagram { margin-top: 1.5em; margin-left: 1.2em; fill: #cc39a4; }
+    .facebook { margin-top: 1.5em; margin-left: -0.9em; fill: #03A9F4; }
+    .whatsapp { margin-top: -0.6em; margin-left: 1.2em; fill: #00ff00; }
+    .gmail { margin-top: -0.9em; margin-left: -1.2em; fill: #f14336; }
+
+    .card1:hover, .card2:hover, .card3:hover, .card4:hover {
+      cursor: pointer;
+      scale: 1.1;
+    }
+
+    .card1:hover { background-color: #cc39a4; }
+    .card2:hover { background-color: #1877f2; }
+    .card3:hover { background-color: #00ff00; }
+    .card4:hover { background-color: #FF0004; }
+    
+    .card1:hover .instagram, .card2:hover .facebook, .card3:hover .whatsapp, .card4:hover .gmail {
+      fill: white;
+    }
+  </style>
+
+  <div class="center-container">
+    <div class="main">
+      <div class="up">
+        <button class="card1">
+          <svg class="instagram" fill-rule="nonzero" height="30px" width="30px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+            <a href="https://www.instagram.com/">
+            <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero"><g transform="scale(8,8)">
+              <path d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"></path>
+            </a></g></g></svg>
+          <!-- Instagram SVG icon -->
+        </button>
+        <button class="card2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" class="facebook" width="24">
+            <a href="https://www.facebook.com/">
+            <path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z"></path>
+            </a></svg>
+          <!-- Facebook SVG icon -->
+        </button>
+      </div>
+      <div class="down">
+        <button class="card3">
+          <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="whatsapp">
+            <a href="https://www.whatsapp.com/">
+            <path d="M19.001 4.908A9.817 9.817 0 0 0 11.992 2C6.534 2 2.085 6.448 2.08 11.908c0 1.748.458 3.45 1.321 4.956L2 22l5.255-1.377a9.916 9.916 0 0 0 4.737 1.206h.005c5.46 0 9.908-4.448 9.913-9.913A9.872 9.872 0 0 0 19 4.908h.001ZM11.992 20.15A8.216 8.216 0 0 1 7.797 19l-.3-.18-3.117.818.833-3.041-.196-.314a8.2 8.2 0 0 1-1.258-4.381c0-4.533 3.696-8.23 8.239-8.23a8.2 8.2 0 0 1 5.825 2.413 8.196 8.196 0 0 1 2.41 5.825c-.006 4.55-3.702 8.24-8.24 8.24Zm4.52-6.167c-.247-.124-1.463-.723-1.692-.808-.228-.08-.394-.123-.556.124-.166.246-.641.808-.784.969-.143.166-.29.185-.537.062-.247-.125-1.045-.385-1.99-1.23-.738-.657-1.232-1.47-1.38-1.716-.142-.247-.013-.38.11-.504.11-.11.247-.29.37-.432.126-.143.167-.248.248-.413.082-.167.043-.31-.018-.433-.063-.124-.557-1.345-.765-1.838-.2-.486-.404-.419-.557-.425-.142-.009-.309-.009-.475-.009a.911.911 0 0 0-.661.31c-.228.247-.864.845-.864 2.067 0 1.22.888 2.395 1.013 2.56.122.167 1.742 2.666 4.229 3.74.587.257 1.05.408 1.41.523.595.19 1.13.162 1.558.1.475-.072 1.464-.6 1.673-1.178.205-.58.205-1.075.142-1.18-.061-.104-.227-.165-.475-.29Z"></path>
+            </a></svg>
+          <!-- WhatsApp SVG icon -->
+        </button>
+        <button class="card4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" class="gmail" width="24">
+            <a href="https://mail.google.com/">
+            <path d="M6 12C6 15.3137 8.68629 18 12 18C14.6124 18 16.8349 16.3304 17.6586 14H12V10H21.8047V14H21.8C20.8734 18.5645 16.8379 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C15.445 2 18.4831 3.742 20.2815 6.39318L17.0039 8.68815C15.9296 7.06812 14.0895 6 12 6C8.68629 6 6 8.68629 6 12Z"></path>
+            </a></svg>
+          <!-- Gmail SVG icon -->
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <div class="contact-info">
+        <p>Customer Support: (123) 456-7890</p>
+        <p>Email: support@pixessy.com</p>
+        <p>Business Hours: Mon - Fri, 9 AM - 5 PM</p>
+    </div>
+
+    <h3>Subscribe to Our Newsletter</h3>
+    <p>Stay updated with the latest deals and products.</p>
+    <div class="signup-form">
+        <input type="email" class="email-input" placeholder="Enter your email address" required>
+        <button class="signup-button">Subscribe</button>
+    </div>
+</footer>
+</body>
+</html>

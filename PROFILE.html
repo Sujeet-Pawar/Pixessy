@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Pixessy</title>
+    <style>
+        /* Dark Theme Styles */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1b1b1b;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #ff6347;
+            margin: 0;
+        }
+        .profile-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1b1b1b;
+            border-radius: 10px;
+        }
+        .profile-section {
+            margin: 20px 0;
+        }
+        .profile-info, .order-item, .settings-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #2a2a2a;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        .profile-info h2, .order-item h3, .settings-option h3 {
+            margin: 0;
+            color: #ff6347;
+        }
+        .profile-details p, .order-details p, .settings-description p {
+            margin: 5px 0;
+        }
+        .order-item .order-status {
+            color: #4caf50;
+        }
+        .settings-button, .logout-button {
+            background-color: #ff6347;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .settings-button:hover, .logout-button:hover {
+            background-color: #e5533d;
+        }
+        .logout-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>User Profile</h1>
+</header>
+<header style="background-color: #1b1b1b; color: #ffffff; padding: 15px 20px;">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+
+      <!-- Logo -->
+      <div id="logo" style="font-size: 1.5em; font-weight: bold;">
+        <a href="index.html" style="color: #ffffff; text-decoration: none;">Pixessy</a>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav style="flex: 1; display: flex; justify-content: center; gap: 20px;">
+        <a href="index.html" style="color: #ffffff; text-decoration: none;">HOME🏠</a>
+        <a href="SHOP.html" style="color: #ffffff; text-decoration: none;">SHOP🛍️</a>
+        <a href="CATEGORIES.html" style="color: #ffffff; text-decoration: none;">CATEGORIES📚</a>
+        <a href="DEALS.html" style="color: #ffffff; text-decoration: none;">DEALS🏷️</a>
+        <a href="CONTACTUS.html" style="color: #ffffff; text-decoration: none;">CONTACT US📞</a>
+      </nav>
+
+      <!-- Search Bar -->
+      <div style="position: relative; width: 200px;">
+        <input type="text" placeholder="Search..." style="width: 90%; padding: 8px; border: 1px solid #333; border-radius: 5px; background-color: #333; color: #ffffff;">
+      </div>
+      <!-- Account and Cart Icons -->
+      <div style="display: flex; gap: 15px;">
+        <!-- Account Icon -->
+        <a href="PROFILE.html" style="color: #ffffff; text-decoration: none;">
+          <span style="font-size: 1.2em;" href="PROFILE.html">👤</span>
+        </a>
+        <!-- Cart Icon -->
+        <a href="CART.html" style="color: #ffffff; text-decoration: none;">
+          <span style="font-size: 1.2em;" href="CART.html">🛒</span>
+        </a>
+      </div>
+    </div>
+  </header>
+<div class="profile-container">
+
+    <!-- Profile Information Section -->
+    <div class="profile-section">
+        <div class="profile-info">
+            <h2>Profile Information</h2>
+            <button class="settings-button">Edit</button>
+        </div>
+        <div class="profile-details">
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> johndoe@example.com</p>
+            <p><strong>Phone:</strong> +1 234 567 890</p>
+            <p><strong>Address:</strong> 123 Main Street, Springfield</p>
+        </div>
+    </div>
+
+    <!-- Order History Section -->
+    <div class="profile-section">
+        <h2>Order History</h2>
+        <div class="order-item">
+            <div class="order-details">
+                <h3>Order #12345</h3>
+                <p>2 items - Total: $49.99</p>
+                <p class="order-status">Status: Delivered</p>
+            </div>
+            <button class="settings-button">View</button>
+        </div>
+        <div class="order-item">
+            <div class="order-details">
+                <h3>Order #12346</h3>
+                <p>1 item - Total: $29.99</p>
+                <p class="order-status">Status: Shipped</p>
+            </div>
+            <button class="settings-button">View</button>
+        </div>
+        <div class="order-item">
+            <div class="order-details">
+                <h3>Order #12347</h3>
+                <p>3 items - Total: $99.99</p>
+                <p class="order-status">Status: Processing</p>
+            </div>
+            <button class="settings-button">View</button>
+        </div>
+    </div>
+
+    <!-- Account Settings Section -->
+    <div class="profile-section">
+        <h2>Account Settings</h2>
+        <div class="settings-option">
+            <div class="settings-description">
+                <h3>Change Password</h3>
+                <p>Update your account password</p>
+            </div>
+            <button class="settings-button">Change</button>
+        </div>
+        <div class="settings-option">
+            <div class="settings-description">
+                <h3>Manage Addresses</h3>
+                <p>Edit or add a new address</p>
+            </div>
+            <button class="settings-button">Manage</button>
+        </div>
+        <div class="settings-option">
+            <div class="settings-description">
+                <h3>Payment Methods</h3>
+                <p>Update your saved payment methods</p>
+            </div>
+            <button class="settings-button">Edit</button>
+        </div>
+    </div>
+
+    <!-- Logout Section -->
+    <div class="logout-container">
+        <button class="logout-button">Log Out</button>
+    </div>
+</div>
+</body>
+</html>
